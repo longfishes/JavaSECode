@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chapter01-04/Chapter01-04.iml" filepath="$PROJECT_DIR$/Chapter01-04/Chapter01-04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter05_array/Chapter05_array.iml" filepath="$PROJECT_DIR$/Chapter05_array/Chapter05_array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter06_oop01/Chapter06_oop01.iml" filepath="$PROJECT_DIR$/Chapter06_oop01/Chapter06_oop01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter07_oop02/Chapter07_oop02.iml" filepath="$PROJECT_DIR$/Chapter07_oop02/Chapter07_oop02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter08_oop03/Chapter08_oop03.iml" filepath="$PROJECT_DIR$/Chapter08_oop03/Chapter08_oop03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter09_exception/Chapter09_exception.iml" filepath="$PROJECT_DIR$/Chapter09_exception/Chapter09_exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter10_thread/Chapter10_thread.iml" filepath="$PROJECT_DIR$/Chapter10_thread/Chapter10_thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter11_api/Chapter11_api.iml" filepath="$PROJECT_DIR$/Chapter11_api/Chapter11_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter12_collection/Chapter12_collection.iml" filepath="$PROJECT_DIR$/Chapter12_collection/Chapter12_collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter14_datastructure/Chapter14_datastructure.iml" filepath="$PROJECT_DIR$/Chapter14_datastructure/Chapter14_datastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter15_io/Chapter15_io.iml" filepath="$PROJECT_DIR$/Chapter15_io/Chapter15_io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter16_net/Chapter16_net.iml" filepath="$PROJECT_DIR$/Chapter16_net/Chapter16_net.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter17_reflection/Chapter17_reflection.iml" filepath="$PROJECT_DIR$/Chapter17_reflection/Chapter17_reflection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Examination/Examination.iml" filepath="$PROJECT_DIR$/Examination/Examination.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProject.iml" filepath="$PROJECT_DIR$/IdeaProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interview01/Interview01.iml" filepath="$PROJECT_DIR$/Interview01/Interview01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Little_Game/Little_Game.iml" filepath="$PROJECT_DIR$/Little_Game/Little_Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module01/Module01.iml" filepath="$PROJECT_DIR$/Module01/Module01.iml" />
+    </modules>
+  </component>
+</project>
