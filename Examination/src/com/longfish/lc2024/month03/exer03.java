@@ -2,19 +2,18 @@ package com.longfish.lc2024.month03;
 
 import org.junit.Test;
 
-import java.math.BigInteger;
 import java.util.Arrays;
 
 public class exer03 {
     public int[] divisibilityArray(String word, int m) {
-        int[] div = new int[word.length()];
+        int[] res = new int[word.length()];
+        long cur = 0;
         for (int i = 0; i < word.length(); i++) {
-            if (new BigInteger(word.substring(0, i + 1))
-                    .mod(new BigInteger(String.valueOf(m)))
-                    .equals(new BigInteger("0")))
-                div[i] = 1;
+            char c = word.charAt(i);
+            cur = (cur * 10 + (c - '0')) % m;
+            res[i] = (cur == 0) ? 1 : 0;
         }
-        return div;
+        return res;
     }
 
     @Test
