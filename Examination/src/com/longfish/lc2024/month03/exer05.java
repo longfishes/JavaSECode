@@ -1,0 +1,37 @@
+package com.longfish.lc2024.month03;
+
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class exer05 {
+    public String capitalizeTitle(String title) {
+        List<String> list = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < title.length(); i++) {
+            if (title.charAt(i) == ' ') {
+                list.add(sb.toString());
+                sb = new StringBuilder();
+                continue;
+            }
+            sb.append(title.charAt(i));
+        }
+        list.add(sb.toString());
+        sb = new StringBuilder();
+        for (String s : list) {
+            if (s.length() < 3) sb.append(s.toLowerCase());
+            else {
+                sb.append((s.charAt(0) + "").toUpperCase());
+                sb.append(s.substring(1).toLowerCase());
+            }
+            sb.append(' ');
+        }
+        return sb.substring(0, sb.length() - 1);
+    }
+
+    @Test
+    public void test1() {
+        System.out.println(capitalizeTitle("capiTalIze tHe titLe"));
+    }
+}
