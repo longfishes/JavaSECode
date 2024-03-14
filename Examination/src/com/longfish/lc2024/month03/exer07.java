@@ -1,5 +1,7 @@
 package com.longfish.lc2024.month03;
 
+import org.junit.Test;
+
 public class exer07 {
     public String maximumOddBinaryNumber(String s) {
         int cnt = 0;
@@ -15,5 +17,10 @@ public class exer07 {
         }
         sb.append('1');
         return sb.toString();
+    }
+
+    @Test
+    public void test1() {
+        System.out.println(maximumOddBinaryNumber("10100"));
     }
 }
