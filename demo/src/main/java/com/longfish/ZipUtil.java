@@ -1,3 +1,4 @@
+
 package com.longfish;
 
 import java.io.File;
@@ -8,13 +9,21 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
+@SuppressWarnings("all")
 public class ZipUtil {
 
     private static final int BUFFER_SIZE = 2 * 1024;
 
-    public static void main(String[] args) {
-        toZip(new File(""), new File(""));
-        decompress(new File(""), new File(""));
+    public static void toZip(String sourceFile, String out) throws RuntimeException {
+        toZip(new File(sourceFile), new File(out));
+    }
+
+    public static void decompress(String zipFile, String destDir) {
+        decompress(new File(zipFile), new File(destDir));
+    }
+
+    public static void deleteDirectoryAndFiles(String directory) {
+        deleteDirectoryAndFiles(new File(directory));
     }
 
     /**
@@ -81,7 +90,6 @@ public class ZipUtil {
      * @param zipFile ZIP文件
      * @param destDir 目标路径
      */
-    @SuppressWarnings("all")
     public static void decompress(File zipFile, File destDir) {
         byte[] buffer = new byte[1024];
         try (ZipInputStream zis = new ZipInputStream(new FileInputStream(zipFile))) {
@@ -107,5 +115,19 @@ public class ZipUtil {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * 递归删除整个文件夹
+     * @param directory 文件夹路径
+     */
+    public static void deleteDirectoryAndFiles(File directory) {
+        File[] files = directory.listFiles();
+        if (files != null) {
+            for (File file : files) {
+                if (!file.delete()) deleteDirectoryAndFiles(file);
+            }
+        }
+        directory.delete();
     }
 }
