@@ -10,21 +10,10 @@ import java.util.Map;
 public class exer13 {
     public List<String> subdomainVisits(String[] cpdomains) {
         Map<String, Integer> map = new HashMap<>();
-        int firstCnt = Integer.parseInt(cpdomains[0].substring(0, cpdomains[0].indexOf(' ')));
-        String[] first = cpdomains[0].substring(cpdomains[0].indexOf(' ') + 1).split("\\.");
 
-        for (int i = 0; i < first.length; i++) {
-            StringBuilder sb = new StringBuilder();
-            for (int j = i; j < first.length; j++) {
-                sb.append(first[j]);
-                sb.append('.');
-            }
-            map.put(sb.substring(0, sb.length() - 1), firstCnt);
-        }
-
-        for (int k = 1; k < cpdomains.length; k++) {
-            int cnt = Integer.parseInt(cpdomains[k].substring(0, cpdomains[k].indexOf(' ')));
-            String[] strs = cpdomains[k].substring(cpdomains[k].indexOf(' ') + 1).split("\\.");
+        for (String cpdomain : cpdomains) {
+            int cnt = Integer.parseInt(cpdomain.substring(0, cpdomain.indexOf(' ')));
+            String[] strs = cpdomain.substring(cpdomain.indexOf(' ') + 1).split("\\.");
 
             for (int i = 0; i < strs.length; i++) {
                 StringBuilder sb = new StringBuilder();
@@ -33,7 +22,6 @@ public class exer13 {
                     sb.append('.');
                 }
                 map.merge(sb.substring(0, sb.length() - 1), cnt, Integer::sum);
-
             }
         }
         List<String> ans = new ArrayList<>();
@@ -43,6 +31,7 @@ public class exer13 {
                     key;
             ans.add(sb);
         });
+
         return ans;
     }
 
