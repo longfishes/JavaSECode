@@ -39,4 +39,9 @@ public class exer13 {
     public void test1() {
         System.out.println(subdomainVisits(new String[]{"900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"}));
     }
+
+    @Test
+    public void test2() {
+        System.out.println(subdomainVisits(new String[]{"10 leetcode.cn"}));
+    }
 }
