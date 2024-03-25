@@ -32,6 +32,11 @@ public class exer14_2 {
     }
 
     @Test
+    public void test2() {
+        System.out.println(coinChange(new int[]{1, 2, 5}, 11));
+    }
+
+    @Test
     public void test1() {
         System.out.println(coinChange(new int[]{186, 419, 83, 408}, 6249));
     }
