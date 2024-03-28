@@ -1,5 +1,7 @@
 package com.longfish.lc2024.month03;
 
+import org.junit.Test;
+
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -19,5 +21,15 @@ public class exer19_3 {
             i = j;
         }
         return res;
+    }
+
+    @Test
+    public void test2() {
+        System.out.println(countWays(new int[][]{{6, 10}, {5, 15}}));
+    }
+
+    @Test
+    public void test1() {
+        System.out.println(countWays(new int[][]{{1, 3}, {2, 4}, {4, 6}, {5, 7}, {100, 200}}));
     }
 }
