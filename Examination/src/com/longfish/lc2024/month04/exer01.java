@@ -19,4 +19,9 @@ public class exer01 {
     public void test1() {
         System.out.println(finalString("String"));
     }
+
+    @Test
+    public void test2() {
+        System.out.println(finalString("soutisout"));
+    }
 }
