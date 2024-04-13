@@ -7,8 +7,8 @@ public class Solution4 {
         int ans = 0;
         if (stars==1)return 1;
         if (stars%2==0) {
-            ans++;//全部两阶一起上
-            ans++;//全部一阶一阶上
+            ans++;
+            ans++;
 
             int n1 = 2;
             int n2 = stars/2+1;
