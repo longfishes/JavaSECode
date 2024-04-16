@@ -35,9 +35,4 @@ public class exer04 {
         }
         System.out.println("cnt = " + cnt);
     }
-
-    @Test
-    public void test5() {
-        System.out.println("hello world!");
-    }
 }
