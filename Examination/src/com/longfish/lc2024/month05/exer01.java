@@ -1,4 +1,4 @@
-package com.longfish.lc2024.month04.month05;
+package com.longfish.lc2024.month05;
 
 import org.junit.Test;
 
